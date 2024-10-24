@@ -12,7 +12,7 @@
 }
 
 :root {
-    --bg-color: #080808;
+    --bg-color: #333333;
     --second-bg-color: #131313;
     --text-color: #fff;
     --main-color: #00ffee;
@@ -26,6 +26,7 @@ html {
 body {
     background: var(--bg-color);
     color: var(--text-color);
+    cursor: url('/images/cursor.png'), auto;
 }
 
 .header {
@@ -33,7 +34,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 4rem 12% 4rem;
+    padding: 1rem 12% 1rem;
     background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     display: flex;
@@ -42,19 +43,25 @@ body {
     z-index: 5;
 }
 
+header img {
+    width: auto; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    padding: auto; /* Add padding around the logo */
+}
+
 .logo {
     font-size: 3rem;
     color: var(--text-color);
     font-weight: 800;
     cursor: pointer;
-    transition: 0.3s ease;
+    transition: 0.3s ease-in-out;
 }
 
-.logo:hover {
+.header img:hover {
     transform: scale(1.1);
 }
 
-.logo span {
+.header img span {
     text-shadow: 0 0 25px var(--main-color);
 }
 
@@ -209,7 +216,7 @@ span {
     color: black;
 }
 
-.text-animation {
+/* .text-animation {
     font-size: 34px;
     font-weight: 600;
     min-width: 280px;
@@ -245,18 +252,13 @@ span {
 @keyframes words {
 
     0%,
-    34% {
-        content: "UI/UX Designer";
+    49% {
+        content: "UI/UX Designer!";
     }
 
-    35%,
-    68% {
-        content: "Interior Designer";
-    }
-
-    69%,
+    50%,
     100% {
-        content: "Graphic Designer";
+        content: "Interior Designer!";
     }
 
 }
@@ -287,4 +289,103 @@ span {
     85% {
         width: calc(100% + 8px);
     }
-}
+} */
+
+.about {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background: var(--bg-color);
+  }
+  
+  .heading {
+    text-align: center;
+    font-size: 4.5rem;
+  }
+  
+  .about-content h2 {
+    text-align: center;
+    line-height: 1.2;
+  }
+  
+  .about-content h3 {
+    font-size: 2.6rem;
+    text-align: center;
+  }
+  
+  .about-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 50rem;
+    text-align: center;
+  }
+
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: var(--bg-color);
+    width: 50px;
+  }
+
+  .services {
+    background: var(--bg-color);
+    color: black;
+  }
+
+  .services h2 {
+    margin-bottom: 5rem;
+    color: white;
+  }
+
+  .services-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  .service-box {
+    background-color: var(--main-color);
+    height: 300px;
+    border-radius: 3rem;
+    border: 5px solid transparent;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+  }
+
+  .service-box:hover {
+    background: white;
+    color: black;
+    border: 5px solid var(--main-color);
+    transform: scale(1.03);
+  }
+
+  .service-box .service-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-height: 200px;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 5rem;
+  }
+
+  .service-info h4 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 2;
+  }
+
+  .service-info p {
+    font-size: 1.6rem;
+    font-weight: 600;
+    max-height: 100px;
+    line-height: 1.7;
+    margin: auto;
+  }

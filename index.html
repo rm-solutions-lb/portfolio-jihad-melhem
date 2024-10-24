@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jihad Melhem</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png" />
     <link rel="stylesheet" href="css/style.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 
 <body>
     <header class="header">
-        <a href="#home" class="logo">Jihad <span>Melhem</span></a>
+        <!-- <a href="#home" class="logo">Think. Plan. <span>Execute.</span></a> -->
+        <a href="#home" title="Home">
+            <img src="images/logo.png" alt="logo">
+          </a>
 
         <i class='bx bx-menu' id="menu-icon"></i>
 
@@ -20,34 +24,70 @@
             <a href="#about">About</a>
             <a href="#services">Services</a>
             <a href="#portfolio">Portfolio</a>
+            <a href="#certificates">Certificates</a>
             <a href="#testimonials">Testimonials</a>
         </nav>
     </header>
 
     <section class="home" id="home">
         <div class="home-content">
-            <h1>Hi, It's <span>Jihad</span></h1>
-            <h3 class="text-animation">I'm a <span></span></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h1>Hi, It's <span>Jihad Melhem</span></h1>
+            <!-- <h3 class="text-animation">I'm a <span></span></h3> -->
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>Based in Lebanon.</p>
 
             <div class="social-icons">
-                <a href="#"><i class='bx bxl-facebook'></i></a>
-                <a href="#"><i class='bx bxl-twitter'></i></a>
-                <a href="#"><i class='bx bxl-instagram'></i></a>
-                <a href="#"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://wa.me/+96170599077" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                <a href="https://www.linkedin.com/in/jihad-melhem-826236202" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="mailto:jihad.melhem9@gmail.com" target="_blank"><i class='bx bxl-gmail' ></i></a>
+                <a href="https://www.instagram.com/jihadmelhem/profilecard/?igsh=MTBkeDAzdnNza2J4Mw==" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.facebook.com/share/974KZiLFUtWPPJJa/" target="_blank"><i class='bx bxl-facebook'></i></a>
             </div>
 
             <div class="btn-group">
-                <a href="#about" class="btn">About Me</a>
-                <a href="#contact" class="btn">Contact Me</a>
+                <a href="resources/Jihad Melhem - Curriculum Vitae.pdf" target="_blank" class="btn">Curriculum Vitae</a>
             </div>
 
         </div>
 
         <div class="home-img">
-            <img src="images/jm-logo.png" alt="">
+            <img src="images/profile.png" alt="">
         </div>
     </section>
 
-    <script src="js/main.js"></script>
+    <!-- about section design -->
+
+    <section class="about" id="about">
+        <div class="about-content">
+          <h2 class="heading">Think. Plan. <span>Execute.</span></h2>
+          <p>As a professional with expertise in UI/UX design as well in Interior Designer, I bring a unique set of skills to every project. I am able to create user-centered interfaces that enhance the user experience. I also have a keen eye for detail and a deep understanding of spatial design, allowing me to conceptualize and execute beautiful and functional interior spaces. Throughout my career, I have consistently delivered high-quality work that meets or exceeds client expectations, while collaborating effectively with team members and stakeholders.</p>
+        </div>
+      </section>
+
+    <!-- services section design -->
+
+    <section class="services" id="services">
+        <h2 class="heading">Services</h2>
+
+        <div class="services-container">
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>UI/UX Design</h4>
+                    <p>Designing user-centered interfaces that enhance the user experience.</p>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>Interior Design</h4>
+                    <p>Conceptualizing and executing beautiful and functional interior spaces.</p>
+                </div>
+        </div>
+    </section>
+
+    <!-- typed js -->
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
 </body>
