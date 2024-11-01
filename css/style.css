@@ -417,7 +417,7 @@ span {
 
 .portfolio-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 2.5rem;
 }
@@ -434,11 +434,10 @@ span {
 .portfolio-box img {
     width: 100%;
     transition: 0.5s ease;
-    object-fit: contain;
 }
 
 .portfolio-box img {
-    transform: scale(1.1);
+    transform: scale(1);
 }
 
 .portfolio-box .portfolio-layer {
@@ -499,6 +498,16 @@ span {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2.5rem;
+    width: 80%;
+    /* Adjust the width as needed */
+    max-width: auto;
+    /* Set a maximum width if needed */
+    height: auto;
+    /* Adjust the height as needed */
+    padding: 1rem;
+    /* Add padding if needed */
+    margin: 0 auto;
+    /* Center the container horizontally */
 }
 
 .certificates-container .certificates-box {
@@ -513,11 +522,10 @@ span {
 .certificates-box img {
     width: 100%;
     transition: 0.5s ease;
-    object-fit: contain;
 }
 
 .certificates-box img {
-    transform: scale(1.1);
+    transform: scale(1);
 }
 
 .certificates-box .certificates-layer {
@@ -543,12 +551,14 @@ span {
 .certificates-layer h4 {
     font-size: 3rem;
     margin: 5rem 0 1rem;
+    color: var(--bg-color);
 }
 
-.certificates-layer p {
+/* .certificates-layer p {
     font-size: 1.6rem;
     margin: 2rem 0 1rem;
-}
+    color: var(--bg-color);
+} */
 
 .certificates-layer a {
     display: inline-flex;
