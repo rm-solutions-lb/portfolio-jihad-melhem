@@ -69,10 +69,14 @@ header img {
     text-shadow: 0 0 25px var(--main-color);
 } */
 
+.navbar {
+    display: flex;
+    gap: 2rem;
+}
+
 .navbar a {
     font-size: 1.8rem;
     color: var(--text-color);
-    margin-left: 4rem;
     font-weight: 500;
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
@@ -792,8 +796,8 @@ span {
         padding-bottom: 7rem;
     }
 
-    .testimonial .wrapper {
-        grid-template-columns: repeat(1.1fr);
+    .testimonials .wrapper {
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .contact form {
@@ -802,6 +806,10 @@ span {
 
     .footer {
         padding: 2rem 3%;
+    }
+
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -864,5 +872,18 @@ span {
 
     .services-container {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .certificates-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
+        width: 90%;
+        max-width: 480px;
+    }
+
+    .portfolio-container {
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 480px;
+        margin: auto;
     }
 }
