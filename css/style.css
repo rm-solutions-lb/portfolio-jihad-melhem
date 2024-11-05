@@ -13,7 +13,7 @@
 
 :root {
     --bg-color: #080808;
-    --second-bg-color: #131313;
+    --second-bg-color: #333333;
     --text-color: #fff;
     --main-color: #00ffee;
 }
@@ -26,7 +26,7 @@ html {
 body {
     background: var(--bg-color);
     color: var(--text-color);
-    cursor: url('/images/cursor.png'), auto;
+    /* cursor: url('/images/cursor.png'), auto; */
 }
 
 .header {
@@ -359,7 +359,7 @@ span {
 }
 
 .service-box {
-    background-color: var(--main-color);
+    background-color: var(--bg-color);
     height: 300px;
     border-radius: 3rem;
     border: 5px solid transparent;
@@ -367,10 +367,19 @@ span {
     transition: 0.4s ease-in-out;
 }
 
+.services-container .service-box {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    overflow: hidden;
+    display: flex;
+    height: 280px;
+}
+
 .service-box:hover {
-    background: white;
+    /* background: var(--main-color); */
     color: black;
-    border: 5px solid var(--main-color);
+    border: 1px solid var(--main-color);
     transform: scale(1.03);
 }
 
@@ -388,6 +397,7 @@ span {
     font-size: 3rem;
     font-weight: 800;
     line-height: 2;
+    color: white;
 }
 
 .service-info p {
@@ -396,6 +406,7 @@ span {
     max-height: 100px;
     line-height: 1.7;
     margin: auto;
+    color: white;
 }
 
 .service-logos {
@@ -525,6 +536,7 @@ span {
 
 .certificates-box img {
     width: 100%;
+    padding: 3rem;
     transition: 0.5s ease;
 }
 
@@ -555,7 +567,7 @@ span {
 .certificates-layer h4 {
     font-size: 3rem;
     margin: 5rem 0 1rem;
-    color: var(--bg-color);
+    color: white
 }
 
 /* .certificates-layer p {
@@ -676,7 +688,7 @@ span {
     padding: 2.5rem;
     font-size: 1.8rem;
     color: var(--text-color);
-    background: var(--second-bg-color);
+    background: var(--bg-color);
     border-radius: 2rem;
     border: 2px solid var(--main-color);
     margin: 1.5rem 0;
@@ -684,7 +696,7 @@ span {
 }
 
 .contact form .btn {
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
 .footer {
@@ -692,7 +704,7 @@ span {
     bottom: 0;
     width: 100%;
     padding: 40px 0;
-    background-color: var(--second-bg-color);
+    background-color: var(--bg-color);
 }
 
 .footer .social {
