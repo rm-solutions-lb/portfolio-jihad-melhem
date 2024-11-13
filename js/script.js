@@ -53,3 +53,18 @@ ScrollReveal().reveal(
 );
 ScrollReveal().reveal(".home-content h1, .about-img", { origin: "left" });
 ScrollReveal().reveal(".home-content p, .about-content", { origin: "right" });
+
+
+/* Carousel */
+var swiper = new Swiper('.swiper', {
+  loop: true,
+  grabCursor: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});

@@ -633,19 +633,17 @@ span {
 
 .wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
+    margin: 5rem 10rem;
 }
 
 .testimonial-item {
     min-height: 550px;
-    max-width: 450px;
     background: rgba(0, 0, 0, 0.7);
     border: 3px solid rgba(238, 238, 238, 0.2);
     border-radius: 2rem;
-    margin: 0 2rem;
     padding: 30px 60px;
-    cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -945,4 +943,21 @@ span {
         max-width: 480px;
         margin: auto;
     }
+}
+
+.swiper {
+    width: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--main-color) !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--main-color) !important;
+}
+
+.swiper-pagination-bullet {
+    border: 1px solid white;
 }
