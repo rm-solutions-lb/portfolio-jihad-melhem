@@ -26,6 +26,7 @@ html {
 body {
     background: var(--bg-color);
     color: var(--text-color);
+    overflow-x: hidden;
     /* cursor: url('/images/cursor.png'), auto; */
 }
 
@@ -103,6 +104,8 @@ section {
     align-items: center;
     justify-content: center;
     gap: 15rem;
+    height: 100vh;
+    padding-bottom: 10rem;
 }
 
 .home-content {
@@ -197,6 +200,7 @@ span {
     font-weight: 600;
     transition: 0.3s ease-in-out;
     cursor: pointer;
+    text-align: center;
 }
 
 .btn:hover {
@@ -304,6 +308,7 @@ span {
     align-items: center;
     gap: 1rem;
     background: var(--bg-color);
+    overflow: hidden;
 }
 
 .heading {
@@ -355,16 +360,19 @@ span {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: 2.5rem;
+    gap: 6rem;
 }
 
 .service-box {
     background-color: var(--bg-color);
-    height: 300px;
+    height: 100%;
     border-radius: 3rem;
     border: 5px solid transparent;
     cursor: pointer;
     transition: 0.4s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .services-container .service-box {
@@ -373,7 +381,6 @@ span {
     box-shadow: 0 0 1rem var(--main-color);
     overflow: hidden;
     display: flex;
-    height: 280px;
 }
 
 .service-box:hover {
@@ -391,6 +398,7 @@ span {
     align-items: center;
     padding: 5rem 5rem;
     height: 100%;
+    width: 100%;
 }
 
 .service-info h4 {
@@ -411,7 +419,10 @@ span {
 
 .service-logos {
     display: flex;
-    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
     /* Adjust the gap between logos as needed */
     margin-top: 1rem;
 }
@@ -444,15 +455,14 @@ span {
     overflow: hidden;
     display: flex;
     height: 280px;
+    justify-content: center;
+    align-items: center;
 }
 
 .portfolio-box img {
-    width: 100%;
+    height: 100%;
     transition: 0.5s ease;
-}
-
-.portfolio-box img {
-    transform: scale(1);
+    object-fit: cover;
 }
 
 .portfolio-box .portfolio-layer {
@@ -532,17 +542,24 @@ span {
     overflow: hidden;
     display: flex;
     height: 280px;
+    justify-content: center;
+    align-items: center;
 }
 
-.certificates-box img {
+.certificates-box.height-img img {
+    height: 100%;
+    padding: 3rem;
+    transition: 0.5s ease;
+    object-fit: cover;
+}
+
+.certificates-box.width-img img {
     width: 100%;
     padding: 3rem;
     transition: 0.5s ease;
+    object-fit: cover;
 }
 
-.certificates-box img {
-    transform: scale(1);
-}
 
 .certificates-box .certificates-layer {
     position: absolute;
@@ -668,35 +685,62 @@ span {
 }
 
 .contact form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
     gap: 3rem;
     margin: 5rem auto;
     text-align: center;
+    grid-template-columns: 1fr 1fr;
+    /* Two equal-width columns */
+    grid-gap: 3rem;
+    /* Adjust gap as needed */
 }
 
-.contact form .input-box {
+/* .contact form .input-group {
+    background-color: yellow;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 3rem;
 }
 
-.contact form .input-box input,
-.contact form textarea {
-    width: 100%;
+.contact form .input-group-2 {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 3rem;
+} */
+
+.contact form .input {
+    /* width: 100%; */
     padding: 2.5rem;
     font-size: 1.8rem;
     color: var(--text-color);
     background: var(--bg-color);
     border-radius: 2rem;
     border: 2px solid var(--main-color);
-    margin: 1.5rem 0;
     resize: none;
 }
 
 .contact form .btn {
-    margin-top: 4rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.contact form textarea {
+    /* width: 100%; */
+    padding: 2.5rem;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    background: var(--bg-color);
+    border-radius: 2rem;
+    border: 2px solid var(--main-color);
+    grid-row: 1 / 4;
+    grid-column: 2;
+    resize: none;
 }
 
 .footer {
@@ -813,6 +857,7 @@ span {
     }
 
     .contact form {
+        display: flex;
         flex-direction: column;
     }
 
@@ -858,6 +903,9 @@ span {
     .home {
         flex-direction: column-reverse;
         margin: 5rem 4rem;
+        gap: 5rem;
+        height: auto;
+        padding-bottom: 10rem;
     }
 
     .home-content h3 {
@@ -871,7 +919,6 @@ span {
 
     .home-content p {
         max-width: 600px;
-        margin: 0 auto;
     }
 
     .home-img img {
