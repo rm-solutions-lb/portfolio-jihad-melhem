@@ -67,4 +67,15 @@ var swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  breakpoints: {
+    // when window width is >= 865px
+    865: {
+      slidesPerView: 2,
+      spaceBetween: -55
+    },
+    // when window width is < 865px
+    0: {
+      slidesPerView: 1,
+    }
+  }
 });
