@@ -128,11 +128,11 @@ span {
 .home-content h3 {
     margin-bottom: 2rem;
     margin-top: 1rem;
-    font-size: 3.5rem;
+    font-size: 3.2rem;
 }
 
 .home-content h1 {
-    font-size: 7rem;
+    font-size: 3.2rem;
     font-weight: 700;
     margin-top: 1.5rem;
     line-height: 1;
@@ -461,8 +461,9 @@ span {
 
 .portfolio-box img {
     height: 100%;
+    width: 100%;
     transition: 0.5s ease;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .portfolio-box .portfolio-layer {
@@ -906,7 +907,7 @@ span {
     }
 
     .home-content h1 {
-        font-size: 8rem;
+        font-size: 5rem;
         margin-top: 3rem;
     }
 
@@ -915,7 +916,7 @@ span {
     }
 
     .home-img img {
-        width: 56vw;
+        width: 70vw;
     }
 
     .services h2 {
